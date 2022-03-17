@@ -13,6 +13,7 @@ species_fitness.csv
 *.pyo
 __pycache__/
 *stats*.dat*
+*.egg-info
 
 # pycharm cache folder
 .idea/
