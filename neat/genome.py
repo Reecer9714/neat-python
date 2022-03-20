@@ -298,7 +298,8 @@ class DefaultGenome(object):
 
         # Mutate node genes (bias, response, etc.).
         for ng in self.nodes.values():
-            ng.mutate(config)
+            if ng.key >= config.num_outputs:
+                ng.mutate(config)
 
     def mutate_add_node(self, config):
         if not self.connections:
